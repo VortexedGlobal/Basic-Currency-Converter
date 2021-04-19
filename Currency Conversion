@@ -1,0 +1,23 @@
+conversion = input("Converting to GBP, EUR or USD? ")
+NumConverting = float(input("How much money are you converting from GBP? "))
+
+def func1(NumConverting):
+  New = NumConverting * 1
+  print ("GBP is",New)
+
+def func2(NumConverting):
+  New = NumConverting * 1.116
+  print ("EUR is",New)
+
+def func3(NumConverting):
+  New = NumConverting * 1.5936
+  print ("USD is",New)
+
+if conversion == "GBP":
+  func1(NumConverting)
+elif conversion == "EUR":
+  func2(NumConverting)
+elif conversion == "USD":
+  func3(NumConverting)
+else:
+  print ("That is not a valid currency")
